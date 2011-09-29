@@ -25,10 +25,6 @@
 		<sql>install.sql</sql>
 		
 		<!-- config -->
-		<eventlistener>eventlistener.xml</eventlistener>		
-		
-		<!-- language -->
-		<languages languagecode="de">de.xml</languages>
-		<languages languagecode="de-informal">de-informal.xml</languages>
+		<eventlistener>eventlistener.xml</eventlistener>
 	</instructions>
 </package>
