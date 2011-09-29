@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/event-listener.xsd">
+	<import>
+		<eventlistener>
+			<eventClassName>ThreadAddForm</eventClassName>
+			<eventName>assignVariables</eventName>
+			<inherit>1</inherit>
+			<listenerclassfile>lib/system/event/listener/ThreadAddFormMarkAsTeamListener.class.php</listenerclassfile>
+		</eventlistener>
+		
+		<eventlistener>
+			<eventClassName>ThreadAddForm</eventClassName>
+			<eventName>saved</eventName>
+			<inherit>1</inherit>
+			<listenerclassfile>lib/system/event/listener/ThreadAddFormMarkAsTeamListener.class.php</listenerclassfile>
+		</eventlistener>
+	
+		<eventlistener>
+			<eventClassName>ThreadPage</eventClassName>
+			<eventName>readData</eventName>
+			<listenerclassfile>lib/system/event/listener/ThreadPageMarkTeamPostsListener.class.php</listenerclassfile>
+		</eventlistener>
+		
+		<eventlistener>
+			<eventClassName>ThreadPage</eventClassName>
+			<eventName>assignVariables</eventName>
+			<listenerclassfile>lib/system/event/listener/ThreadPageMarkTeamPostsListener.class.php</listenerclassfile>
+		</eventlistener>
+	</import>
+</data>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "http://www.woltlab.com/DTDs/language.dtd">
+<language languagecode="de">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.board.post.team"><![CDATA[Teambeiträge]]></item>	
+		<item name="wcf.acp.option.category.board.post.team.description"><![CDATA[Teambeiträge hervorheben]]></item>
+		<item name="wcf.acp.option.team_post_css"><![CDATA[CSS Code]]></item>
+		<item name="wcf.acp.option.team_post_css.description"><![CDATA[Bitte geben Sie einen CSS Code für die Teambeiträge an.]]></item>
+	</category>
+</language>
