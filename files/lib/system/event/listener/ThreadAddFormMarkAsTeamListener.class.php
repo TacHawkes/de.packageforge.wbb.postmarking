@@ -25,4 +25,3 @@ class ThreadAddFormMarkAsTeamListener extends AbstractMessageAddFormMarkAsTeamLi
 		WCF::getDB()->sendQuery($sql);
 	}
 }
-?>

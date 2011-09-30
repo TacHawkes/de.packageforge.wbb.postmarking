@@ -48,4 +48,3 @@ class ThreadPageMarkTeamPostsListener extends AbstractMarkTeamMessageListener {
 		return '#postRow'.$objectID;
 	}
 }
-?>

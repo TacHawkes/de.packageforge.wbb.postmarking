@@ -10,4 +10,3 @@ $sql = "UPDATE		wbb".WBB_N."_post
 	SET		markAsTeamMessage = 1
 	WHERE		time < (SELECT installDate FROM wcf".WCF_N."_package WHERE packageID = ".$this->installation->getPackageID().")";
 WCF::getDB()->sendQuery($sql);
-?>
