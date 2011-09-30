@@ -6,8 +6,8 @@
 		<standalone>0</standalone>
 		<isunique>0</isunique>
 		<plugin>com.woltlab.wbb</plugin>
-		<version>1.0.0 beta 1</version>
-		<date>2011-09-29</date>
+		<version>1.0.0 beta 2</version>
+		<date>2011-09-30</date>
 	</packageinformation>
 
 	<authorinformation>
@@ -26,5 +26,10 @@
 		
 		<!-- config -->
 		<eventlistener>eventlistener.xml</eventlistener>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0.0 beta 1">
+		<!-- files -->
+		<script>acp/updateDefaultsTeamMarking.php</script>
 	</instructions>
 </package>
