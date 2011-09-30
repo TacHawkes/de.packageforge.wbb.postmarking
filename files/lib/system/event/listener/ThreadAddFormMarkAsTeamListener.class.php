@@ -23,5 +23,9 @@ class ThreadAddFormMarkAsTeamListener extends AbstractMessageAddFormMarkAsTeamLi
 			SET	markAsTeamMessage = ".$markAsTeamMessage."
 			WHERE	postID = ".$postID;
 		WCF::getDB()->sendQuery($sql);
+		
+		if ($className == 'PostEditForm') {
+			$this->saveSetting = false;
+		}
 	}
 }

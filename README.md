@@ -11,7 +11,7 @@ The current version is a beta version and can still contain serious bugs or erro
 Contribution
 ------------
 
-Every developer is welcome to provide bug fixes or enhancements. The usual WCF code style rules apply (taken and modified from the WCF 2.0 readme):
+Every developer is welcome to provide bug fixes or enhancements. The usual WCF code style rules apply (taken from the WCF 2.0 readme):
 
 * Testing is key, you MUST try out your changes before submitting pull requests
 * You MUST save your files with Unix-style line endings (\n)
