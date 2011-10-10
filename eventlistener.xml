@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/event-listener.xsd">
 	<import>
+		<!-- user -->
 		<eventlistener>
 			<eventClassName>ThreadAddForm</eventClassName>
 			<eventName>assignVariables</eventName>
@@ -26,5 +27,29 @@
 			<eventName>assignVariables</eventName>
 			<listenerclassfile>lib/system/event/listener/ThreadPageMarkTeamPostsListener.class.php</listenerclassfile>
 		</eventlistener>
+		<!-- /user -->
+		<!-- admin -->
+		<eventlistener>
+			<eventclassname>BoardAddForm</eventclassname>
+			<eventname>readFormParameters</eventname>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+			<listenerclassfile>lib/system/event/listener/BoardAddFormEnableMessageMarkingsListener.class.php</listenerclassfile>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>BoardAddForm</eventclassname>
+			<eventname>save</eventname>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+			<listenerclassfile>lib/system/event/listener/BoardAddFormEnableMessageMarkingsListener.class.php</listenerclassfile>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>BoardAddForm</eventclassname>
+			<eventname>assignVariables</eventname>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+			<listenerclassfile>lib/system/event/listener/BoardAddFormEnableMessageMarkingsListener.class.php</listenerclassfile>
+		</eventlistener>		
+		<!-- /admin -->
 	</import>
 </data>

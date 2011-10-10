@@ -27,9 +27,4 @@
 		<!-- config -->
 		<eventlistener>eventlistener.xml</eventlistener>
 	</instructions>
-	
-	<instructions type="update" fromversion="1.0.0 beta 1">
-		<!-- files -->
-		<script>acp/updateDefaultsTeamMarking.php</script>
-	</instructions>
 </package>
