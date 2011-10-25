@@ -1,20 +1,20 @@
 <?php
 // wcf imports
-require_once(WCF_DIR.'lib/system/event/listener/AbstractMarkTeamMessageListener.class.php');
+require_once(WCF_DIR.'lib/system/event/listener/AbstractMessageMarkingListener.class.php');
 
 /**
- * Marks team member's posts
+ * Marks posts
  *
  * @author      Oliver Kliebisch
  * @copyright   2011 Oliver Kliebisch
  * @license	GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
- * @package     de.packageforge.wbb.markteam
+ * @package     de.packageforge.wbb.postmarking
  * @subpackage  system.event.listener
  * @category    Burning Board
  */
-class ThreadPageMarkTeamPostsListener extends AbstractMarkTeamMessageListener {
+class ThreadPageMarkTeamPostsListener extends AbstractMessageMarkingListener {
 	/**
-	 * @see AbstractMarkTeamMessageListener::appendMessageObjectList()
+	 * @see AbstractMessageMarkingListener::appendMessageObjectList()
 	 */
 	public function appendMessageObjectList($eventObj, $className, $eventName) {
 		/* as the post list is still not compliant to the database object list class
@@ -28,21 +28,21 @@ class ThreadPageMarkTeamPostsListener extends AbstractMarkTeamMessageListener {
 	}
 	
 	/**
-	 * @see AbstractMarkTeamMessageListener::getMessageObjects()
+	 * @see AbstractMessageMarkingListener::getMessageObjects()
 	 */
 	public function getMessageObjects($eventObj, $className, $eventName) {
 		return $eventObj->postList->posts;
 	}
 	
 	/**
-	 * @see AbstractMarkTeamMessageListener::getObjectID()
+	 * @see AbstractMessageMarkingListener::getObjectID()
 	 */
 	public function getObjectID($object) {
 		return $object->postID;
 	}
 	
 	/**
-	 * @see AbstractMarkTeamMessageListener::getMessageContainerSelector()
+	 * @see AbstractMessageMarkingListener::getMessageContainerSelector()
 	 */
 	public function getMessageContainerSelector($objectID) {
 		return '#postRow'.$objectID;

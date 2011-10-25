@@ -6,26 +6,26 @@
 			<eventClassName>ThreadAddForm</eventClassName>
 			<eventName>assignVariables</eventName>
 			<inherit>1</inherit>
-			<listenerclassfile>lib/system/event/listener/ThreadAddFormMarkAsTeamListener.class.php</listenerclassfile>
+			<listenerclassfile>lib/system/event/listener/ThreadAddFormMessageMarkingListener.class.php</listenerclassfile>
 		</eventlistener>
 		
 		<eventlistener>
 			<eventClassName>ThreadAddForm</eventClassName>
 			<eventName>saved</eventName>
 			<inherit>1</inherit>
-			<listenerclassfile>lib/system/event/listener/ThreadAddFormMarkAsTeamListener.class.php</listenerclassfile>
+			<listenerclassfile>lib/system/event/listener/ThreadAddFormMessageMarkingListener.class.php</listenerclassfile>
 		</eventlistener>
 	
 		<eventlistener>
 			<eventClassName>ThreadPage</eventClassName>
 			<eventName>readData</eventName>
-			<listenerclassfile>lib/system/event/listener/ThreadPageMarkTeamPostsListener.class.php</listenerclassfile>
+			<listenerclassfile>lib/system/event/listener/ThreadPageMessageMarkingListener.class.php</listenerclassfile>
 		</eventlistener>
 		
 		<eventlistener>
 			<eventClassName>ThreadPage</eventClassName>
 			<eventName>assignVariables</eventName>
-			<listenerclassfile>lib/system/event/listener/ThreadPageMarkTeamPostsListener.class.php</listenerclassfile>
+			<listenerclassfile>lib/system/event/listener/ThreadPageMessageMarkingListener.class.php</listenerclassfile>
 		</eventlistener>
 		<!-- /user -->
 		<!-- admin -->
@@ -34,21 +34,21 @@
 			<eventname>readFormParameters</eventname>
 			<environment>admin</environment>
 			<inherit>1</inherit>
-			<listenerclassfile>lib/system/event/listener/BoardAddFormEnableMessageMarkingsListener.class.php</listenerclassfile>
+			<listenerclassfile>lib/system/event/listener/BoardAddFormEnableMessageMarkingListener.class.php</listenerclassfile>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>BoardAddForm</eventclassname>
 			<eventname>save</eventname>
 			<environment>admin</environment>
 			<inherit>1</inherit>
-			<listenerclassfile>lib/system/event/listener/BoardAddFormEnableMessageMarkingsListener.class.php</listenerclassfile>
+			<listenerclassfile>lib/system/event/listener/BoardAddFormEnableMessageMarkingListener.class.php</listenerclassfile>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>BoardAddForm</eventclassname>
 			<eventname>assignVariables</eventname>
 			<environment>admin</environment>
 			<inherit>1</inherit>
-			<listenerclassfile>lib/system/event/listener/BoardAddFormEnableMessageMarkingsListener.class.php</listenerclassfile>
+			<listenerclassfile>lib/system/event/listener/BoardAddFormEnableMessageMarkingListener.class.php</listenerclassfile>
 		</eventlistener>		
 		<!-- /admin -->
 	</import>
