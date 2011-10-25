@@ -16,7 +16,7 @@
 
 	<requiredpackages>
 		<requiredpackage minversion="3.1.2">com.woltlab.wbb</requiredpackage>
-		<requiredpackage minversion="1.0.0 beta 1" file="requirements/de.packageforge.wcf.message.marking.tar">de.packageforge.wcf.message.marking</requiredpackage>
+		<requiredpackage minversion="1.0.0 beta 1" file="requirements/de.packageforge.wcf.data.message.marking.tar">de.packageforge.wcf.data.message.marking</requiredpackage>
 	</requiredpackages>
 
 	<instructions type="install">
