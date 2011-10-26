@@ -12,7 +12,7 @@ require_once(WCF_DIR.'lib/system/event/listener/AbstractMessageAddFormMessageMar
  * @subpackage  system.event.listener
  * @category    Burning Board
  */
-class ThreadAddFormMarkAsTeamListener extends AbstractMessageAddFormMessageMarkingListener {
+class ThreadAddFormMessageMarkingListener extends AbstractMessageAddFormMessageMarkingListener {
 	/**
 	 * @see	AbstractMessageAddFormMessageMarkingListener::saveMessageObjectSetting()
 	 */

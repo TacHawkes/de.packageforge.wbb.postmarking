@@ -12,7 +12,7 @@ require_once(WCF_DIR.'lib/system/event/listener/AbstractMessageMarkingListener.c
  * @subpackage  system.event.listener
  * @category    Burning Board
  */
-class ThreadPageMarkTeamPostsListener extends AbstractMessageMarkingListener {
+class ThreadPageMessageMarkingListener extends AbstractMessageMarkingListener {
 	/**
 	 * @see AbstractMessageMarkingListener::appendMessageObjectList()
 	 */
