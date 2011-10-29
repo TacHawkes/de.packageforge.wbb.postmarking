@@ -21,6 +21,7 @@
 
 	<instructions type="install">
 		<!-- files -->
+		<acptemplates>acptemplates.tar</acptemplates>
 		<files>files.tar</files>
 		<sql>install.sql</sql>
 		

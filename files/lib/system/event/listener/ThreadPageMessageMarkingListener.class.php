@@ -13,6 +13,16 @@ require_once(WCF_DIR.'lib/system/event/listener/AbstractMessageMarkingListener.c
  * @category    Burning Board
  */
 class ThreadPageMessageMarkingListener extends AbstractMessageMarkingListener {
+	
+	/**
+	 * @see EventListener::execute()
+	 */
+	public function execute($eventObj, $className, $eventName) {
+		if ($eventObj->board->enableMessageMarking) {
+			parent::execute($eventObj, $className, $eventName);
+		}
+	}
+	
 	/**
 	 * @see AbstractMessageMarkingListener::appendMessageObjectList()
 	 */

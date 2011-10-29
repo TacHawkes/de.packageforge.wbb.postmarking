@@ -13,15 +13,25 @@ require_once(WCF_DIR.'lib/system/event/listener/AbstractMessageAddFormMessageMar
  * @category    Burning Board
  */
 class ThreadAddFormMessageMarkingListener extends AbstractMessageAddFormMessageMarkingListener {
+
+	/**
+	 * @see EventListener::execute()
+	 */
+	public function execute($eventObj, $className, $eventName) {
+		if ($eventObj->board->enableMessageMarking) {
+			parent::execute($eventObj, $className, $eventName);
+		}
+	}
+
 	/**
 	 * @see	AbstractMessageAddFormMessageMarkingListener::saveMessageObjectSetting()
 	 */
 	public function saveMessageObjectSetting($eventObj, $className, $markingID) {
 		$postID = $className == 'ThreadAddForm' ? $eventObj->newThread->firstPostID : $eventObj->postID;
-		
+
 		$sql = "UPDATE	wbb".WBB_N."_post
 			SET	markingID = ".$markingID."
 			WHERE	postID = ".$postID;
-		WCF::getDB()->sendQuery($sql);		
+		WCF::getDB()->sendQuery($sql);
 	}
 }

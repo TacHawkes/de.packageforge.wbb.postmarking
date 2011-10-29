@@ -49,6 +49,36 @@
 			<environment>admin</environment>
 			<inherit>1</inherit>
 			<listenerclassfile>lib/system/event/listener/BoardAddFormEnableMessageMarkingListener.class.php</listenerclassfile>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>PostsMassProcessingForm</eventclassname>
+			<eventname>readParameters</eventname>
+			<environment>admin</environment>
+			<listenerclassfile>lib/system/event/listener/PostsMassProcessingFormMessageMarkingListener.class.php</listenerclassfile>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>PostsMassProcessingForm</eventclassname>
+			<eventname>readFormParameters</eventname>
+			<environment>admin</environment>
+			<listenerclassfile>lib/system/event/listener/PostsMassProcessingFormMessageMarkingListener.class.php</listenerclassfile>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>PostsMassProcessingForm</eventclassname>
+			<eventname>validate</eventname>
+			<environment>admin</environment>
+			<listenerclassfile>lib/system/event/listener/PostsMassProcessingFormMessageMarkingListener.class.php</listenerclassfile>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>PostsMassProcessingForm</eventclassname>
+			<eventname>saved</eventname>
+			<environment>admin</environment>
+			<listenerclassfile>lib/system/event/listener/PostsMassProcessingFormMessageMarkingListener.class.php</listenerclassfile>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>PostsMassProcessingForm</eventclassname>
+			<eventname>assignVariables</eventname>
+			<environment>admin</environment>
+			<listenerclassfile>lib/system/event/listener/PostsMassProcessingFormMessageMarkingListener.class.php</listenerclassfile>
 		</eventlistener>		
 		<!-- /admin -->
 	</import>
