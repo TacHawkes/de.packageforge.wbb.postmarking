@@ -35,6 +35,8 @@ class BoardAddFormEnableMessageMarkingListener implements EventListener {
 					// get old values
 					$this->enableMessageMarking = $eventObj->board->enableMessageMarking;
 				}
+			}
+			else if ($eventName == 'assignVariables') {
 				// append tpl
 				WCF::getTPL()->append('additionalSettings', '<div class="formElement">
 							<div class="formField">

@@ -45,6 +45,13 @@
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>BoardAddForm</eventclassname>
+			<eventname>readData</eventname>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+			<listenerclassfile>lib/system/event/listener/BoardAddFormEnableMessageMarkingListener.class.php</listenerclassfile>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>BoardAddForm</eventclassname>
 			<eventname>assignVariables</eventname>
 			<environment>admin</environment>
 			<inherit>1</inherit>
@@ -65,6 +72,12 @@
 		<eventlistener>
 			<eventclassname>PostsMassProcessingForm</eventclassname>
 			<eventname>validate</eventname>
+			<environment>admin</environment>
+			<listenerclassfile>lib/system/event/listener/PostsMassProcessingFormMessageMarkingListener.class.php</listenerclassfile>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>PostsMassProcessingForm</eventclassname>
+			<eventname>save</eventname>
 			<environment>admin</environment>
 			<listenerclassfile>lib/system/event/listener/PostsMassProcessingFormMessageMarkingListener.class.php</listenerclassfile>
 		</eventlistener>

@@ -34,4 +34,11 @@ class ThreadAddFormMessageMarkingListener extends AbstractMessageAddFormMessageM
 			WHERE	postID = ".$postID;
 		WCF::getDB()->sendQuery($sql);
 	}
+	
+	/**
+	 * @see	AbstractMessageAddFormMessageMarkingListener::getMarkingID()
+	 */
+	public function getMarkingID($eventObj, $className) {
+		return ($className == 'PostEditForm' ? $eventObj->post->markingID : WCF::getUser()->defaultMessageMarkingID);
+	}
 }
