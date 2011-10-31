@@ -1,22 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <package name="de.packageforge.wbb.postmarking" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
 	<packageinformation>
-		<packageName>Mark Posts</packageName>
+		<packagename>Post markings</packagename>
+		<packagename language="de">Beitragsmarkierung</packagename>
+		<packagename language="de-informal">Beitragsmarkierung</packagename>
 		<packagedescription>This package allows the marking of posts.</packagedescription>
+		<packagedescription language="de"><![CDATA[Dieses Paket ermöglicht die Markierung von Beiträgen mit individuellem CSS.]]></packagedescription>
+		<packagedescription language="de-informal"><![CDATA[Dieses Paket ermöglicht die Markierung von Beiträgen mit individuellem CSS.]]></packagedescription>
 		<standalone>0</standalone>
 		<isunique>0</isunique>
 		<plugin>com.woltlab.wbb</plugin>
 		<version>1.0.0 beta 2</version>
-		<date>2011-09-30</date>
+		<date>2011-11-01</date>
 	</packageinformation>
 
 	<authorinformation>
-		<author><![CDATA[Oliver Kliebisch, Markus Bartz]]></author>
+		<author><![CDATA[Oliver Kliebisch]]></author>
+		<authorurl><![CDATA[http://www.packageforge.de]]></authorurl>
 	</authorinformation>
 
 	<requiredpackages>
 		<requiredpackage minversion="3.1.2">com.woltlab.wbb</requiredpackage>
-		<requiredpackage minversion="1.0.0 beta 1" file="requirements/de.packageforge.wcf.data.message.marking.tar">de.packageforge.wcf.data.message.marking</requiredpackage>
+		<requiredpackage minversion="1.0.0 beta 2" file="requirements/de.packageforge.wcf.data.message.marking.tar">de.packageforge.wcf.data.message.marking</requiredpackage>
 	</requiredpackages>
 
 	<instructions type="install">
@@ -27,5 +32,10 @@
 		
 		<!-- config -->
 		<eventlistener>eventlistener.xml</eventlistener>
+		
+		<!-- language -->
+		<languages languagecode="de">de.xml</languages>
+		<!-- <languages languagecode="de-informal">de-informal.xml</languages> -->
+		<!-- <languages languagecode="en">en.xml</languages> -->
 	</instructions>
 </package>
