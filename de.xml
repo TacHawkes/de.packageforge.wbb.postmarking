@@ -3,10 +3,11 @@
 	<category name="wbb.acp.board">
 		<item name="wbb.acp.board.enableMessageMarking"><![CDATA[Beiträge dieses Forums können markiert werden]]></item>		
 	</category>
-	<category name="wbb.acp.massProcessing">
+	<category name="wbb.acp.massProcessing">	
 		<item name="wbb.acp.massProcessing.action.assignMessageMarking"><![CDATA[Nachrichtenmarkierung setzen]]></item>
-		<item name="wbb.acp.massProcessing.action.assignMessageMarking.markingID"><![CDATA[Markierung]]></item>
-		<item name="wbb.acp.massProcessing.action.assignMessageMarking.markingID.description"><![CDATA[Wählen Sie eine Markierung aus, die für die Beiträge gesetzt wird, die den oben gewählten Bedingungen entsprechen <strong>und</strong> für deren Autoren diese Markierung zur Verfügung steht.]]></item>
+		<item name="wbb.acp.massProcessing.assignMessageMarking"><![CDATA[Nachrichtenmarkierung setzen]]></item>
+		<item name="wbb.acp.massProcessing.assignMessageMarking.markingID"><![CDATA[Markierung]]></item>
+		<item name="wbb.acp.massProcessing.assignMessageMarking.markingID.description"><![CDATA[Wählen Sie eine Markierung aus, die für die Beiträge gesetzt wird, die den oben gewählten Bedingungen entsprechen <strong>und</strong> für deren Autoren diese Markierung zur Verfügung steht.]]></item>
 		<item name="wbb.acp.massProcessing.conditions.marking"><![CDATA[Markierung]]></item>
 		<item name="wbb.acp.massProcessing.conditions.marking.active"><![CDATA[Bedingung aktivieren]]></item>
 		<item name="wbb.acp.massProcessing.conditions.marking.description"><![CDATA[]]></item>		
