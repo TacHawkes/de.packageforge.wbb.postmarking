@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
 	<category name="wbb.acp.board">
 		<item name="wbb.acp.board.enableMessageMarking"><![CDATA[Beiträge dieses Forums können markiert werden]]></item>		
 	</category>
 	<category name="wbb.acp.massProcessing">
 		<item name="wbb.acp.massProcessing.action.assignMessageMarking"><![CDATA[Nachrichtenmarkierung setzen]]></item>
 		<item name="wbb.acp.massProcessing.action.assignMessageMarking.markingID"><![CDATA[Markierung]]></item>
-		<item name="wbb.acp.massProcessing.action.assignMessageMarking.markingID.description"><![CDATA[Wählen Sie eine Markierung aus, die für die Beiträge gesetzt wird, die den oben gewählten Bedingungen entsprechen <strong>und</strong> für deren Autoren diese Markierung zur Verfügung steht.]]></item>
+		<item name="wbb.acp.massProcessing.action.assignMessageMarking.markingID.description"><![CDATA[Wähle eine Markierung aus, die für die Beiträge gesetzt wird, die den oben gewählten Bedingungen entsprechen <strong>und</strong> für deren Autoren diese Markierung zur Verfügung steht.]]></item>
 		<item name="wbb.acp.massProcessing.conditions.marking"><![CDATA[Markierung]]></item>
 		<item name="wbb.acp.massProcessing.conditions.marking.active"><![CDATA[Bedingung aktivieren]]></item>
 		<item name="wbb.acp.massProcessing.conditions.marking.description"><![CDATA[]]></item>		

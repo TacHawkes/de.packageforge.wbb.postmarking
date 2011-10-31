@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<category name="wbb.acp.board">
+		<item name="wbb.acp.board.enableMessageMarking"><![CDATA[Posts of this board can be marked]]></item>		
+	</category>
+	<category name="wbb.acp.massProcessing">
+		<item name="wbb.acp.massProcessing.action.assignMessageMarking"><![CDATA[Set marking]]></item>
+		<item name="wbb.acp.massProcessing.action.assignMessageMarking.markingID"><![CDATA[Marking]]></item>
+		<item name="wbb.acp.massProcessing.action.assignMessageMarking.markingID.description"><![CDATA[The selected marking will be set for all posts which meet the condtions above <strong>and</strong> which authors have access to this marking.]]></item>
+		<item name="wbb.acp.massProcessing.conditions.marking"><![CDATA[Marking]]></item>
+		<item name="wbb.acp.massProcessing.conditions.marking.active"><![CDATA[Activate condition]]></item>
+		<item name="wbb.acp.massProcessing.conditions.marking.description"><![CDATA[]]></item>		
+	</category>
+</language>

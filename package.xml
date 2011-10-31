@@ -35,7 +35,7 @@
 		
 		<!-- language -->
 		<languages languagecode="de">de.xml</languages>
-		<!-- <languages languagecode="de-informal">de-informal.xml</languages> -->
-		<!-- <languages languagecode="en">en.xml</languages> -->
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		 <languages languagecode="en">en.xml</languages>
 	</instructions>
 </package>
