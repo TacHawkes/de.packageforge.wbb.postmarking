@@ -44,13 +44,14 @@
 				<fieldset>
 					<legend>{lang}wbb.acp.massProcessing.assignMessageMarking.markingID{/lang}</legend>
 						
-					<div class="formField">
-						<ul class="formOptionsLong">
-							<li><label><input type="radio" name="markingID" value="0" {if $markingID == 0}checked="checked" {/if}/> <span>{lang}wcf.user.option.defaultMessageMarkingID.none{/lang}</span></label></li>
+					<div class="formField">	
+						<select name="markingID" id="markingID">
+							<option value="0"{if $markingID == 0} selected="selected"{/if}>{lang}wcf.user.option.defaultMessageMarkingID.none{/lang}</option>
 							{foreach from=$markings item=marking}
-								<li><label><input type="radio" name="markingID" value="{@$marking->markingID}" {if $marking->markingID == $markingID}checked="checked" {/if}/> <span>{lang}{$marking->title}{/lang}</span></label></li>
+								<option value="{@$marking->markingID}"
+								{if $marking->markingID == $markingID} selected="selected"{/if}>{lang}{$marking->title}{/lang}</option>
 							{/foreach}
-						</ul>		
+						</select>	
 					</div>
 					
 					<div class="formFieldDesc" id="markingIDHelpMessage">
