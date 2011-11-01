@@ -53,4 +53,3 @@ class BoardAddFormEnableMessageMarkingListener implements EventListener {
 		}
 	}
 }
-?>

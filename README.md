@@ -1,7 +1,7 @@
-Mark Team Posts 1.0
+Mark Posts 1.0
 ===============================
 
-This plugin adds a function for marking posts as team posts with special CSS. It requires it's WCF counterpart: https://github.com/TacHawkes/de.packageforge.wcf.markteam
+This plugin adds a function for marking posts with special CSS. It requires it's WCF counterpart: https://github.com/TacHawkes/de.packageforge.wcf.data.message.marking
 
 Version notes
 -------------

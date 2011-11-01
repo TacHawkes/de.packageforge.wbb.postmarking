@@ -27,7 +27,21 @@ class ThreadAddFormMessageMarkingListener extends AbstractMessageAddFormMessageM
 	 * @see	AbstractMessageAddFormMessageMarkingListener::saveMessageObjectSetting()
 	 */
 	public function saveMessageObjectSetting($eventObj, $className, $markingID) {
-		$postID = $className == 'ThreadAddForm' ? $eventObj->newThread->firstPostID : $eventObj->postID;
+		switch ($className) {
+			case 'ThreadAddForm':
+				$postID = $eventObj->newThread->firstPostID;
+				break;
+			case 'PostAddForm':
+			case 'PostQuickAddForm':
+				$postID = $eventObj->newPost->postID;
+				break;
+			case 'PostEditForm':
+				$postID = $eventObj->postID;
+				break;
+			default:
+				$postID = $eventObj->postID;
+				break;
+		}		
 
 		$sql = "UPDATE	wbb".WBB_N."_post
 			SET	markingID = ".$markingID."
