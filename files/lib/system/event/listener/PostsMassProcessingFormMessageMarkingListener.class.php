@@ -82,7 +82,8 @@ class PostsMassProcessingFormMessageMarkingListener implements EventListener {
 					// if id != 0 check if id is available for each post author
 					if ($this->markingID != 0) {
 						foreach ($posts as $key => $post) {
-							if (!count(MessageMarking::getAvailableMarkings(explode(',', $post['groupIDs']), false))) {
+							$m = MessageMarking::getAvailableMarkings(explode(',', $post['groupIDs']));							
+							if (!isset($m[$this->markingID])) {
 								unset($posts[$key]);	
 							}
 						}
