@@ -10,8 +10,8 @@
 		<standalone>0</standalone>
 		<isunique>0</isunique>
 		<plugin>com.woltlab.wbb</plugin>
-		<version>1.0.0 beta 2</version>
-		<date>2011-11-01</date>
+		<version>1.0.0 beta 4</version>
+		<date>2011-11-02</date>
 	</packageinformation>
 
 	<authorinformation>
@@ -21,7 +21,7 @@
 
 	<requiredpackages>
 		<requiredpackage minversion="3.1.2">com.woltlab.wbb</requiredpackage>
-		<requiredpackage minversion="1.0.0 beta 2" file="requirements/de.packageforge.wcf.data.message.marking.tar">de.packageforge.wcf.data.message.marking</requiredpackage>
+		<requiredpackage minversion="1.0.0 beta 4" file="requirements/de.packageforge.wcf.data.message.marking.tar">de.packageforge.wcf.data.message.marking</requiredpackage>
 	</requiredpackages>
 
 	<instructions type="install">
@@ -32,6 +32,23 @@
 		
 		<!-- config -->
 		<eventlistener>eventlistener.xml</eventlistener>
+		
+		<!-- language -->
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0.0 beta 3">					
+		<!-- language -->
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0.0 beta 2">
+		<!-- files -->
+		<acptemplates>acptemplates.tar</acptemplates>		
 		
 		<!-- language -->
 		<languages languagecode="de">de.xml</languages>
