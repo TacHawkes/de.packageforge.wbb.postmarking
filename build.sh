@@ -1,5 +1,5 @@
 #!/bin/sh
-ARCHIVE_NAME="de.packageforge.wbb.postmarking.tar"
+ARCHIVE_NAME="de.packageforge.wbb.postmarking.tar.gz"
 
 # remove old packages
 test -e files.tar && rm files.tar
