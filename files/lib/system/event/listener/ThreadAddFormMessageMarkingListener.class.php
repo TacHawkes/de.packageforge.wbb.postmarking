@@ -55,4 +55,25 @@ class ThreadAddFormMessageMarkingListener extends AbstractMessageAddFormMessageM
 	public function getMarkingID($eventObj, $className) {
 		return ($className == 'PostEditForm' ? $eventObj->post->markingID : WCF::getUser()->defaultMessageMarkingID);
 	}
+	
+	/**
+	 * @see	AbstractMessageAddFormMessageMarkingListener::getGroupIDs()
+	 */
+	public function getGroupID($eventObj, $className) {
+		if ($className == 'PostEditForm') {
+			// get group ids of author
+			$sql = "SELECT 		GROUP_CONCAT(DISTINCT groupID ORDER BY groupID ASC SEPARATOR ',') AS groupIDs
+				FROM		wcf".WCF_N."_user_to_groups
+				WHERE		userID = ".$eventObj->post->userID;			
+			$row = WCF::getDB()->getFirstRow($sql);
+			
+			if ($row) {
+				return explode(',', $row['groupIDs']);
+			}			
+			else return array();
+		}
+		else {
+			return null;	
+		}		
+	}
 }
