@@ -59,7 +59,7 @@ class ThreadAddFormMessageMarkingListener extends AbstractMessageAddFormMessageM
 	/**
 	 * @see	AbstractMessageAddFormMessageMarkingListener::getGroupIDs()
 	 */
-	public function getGroupID($eventObj, $className) {
+	public function getGroupIDs($eventObj, $className) {
 		if ($className == 'PostEditForm') {
 			// get group ids of author
 			$sql = "SELECT 		GROUP_CONCAT(DISTINCT groupID ORDER BY groupID ASC SEPARATOR ',') AS groupIDs
