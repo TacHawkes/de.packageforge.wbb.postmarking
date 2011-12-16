@@ -10,8 +10,8 @@
 		<standalone>0</standalone>
 		<isunique>0</isunique>
 		<plugin>com.woltlab.wbb</plugin>
-		<version>1.0.2</version>
-		<date>2011-11-28</date>
+		<version>1.0.2 pl 1</version>
+		<date>2011-12-16</date>
 	</packageinformation>
 
 	<authorinformation>
@@ -40,7 +40,6 @@
 	</instructions>
 	
 	<instructions type="update" fromversion="1.0.1">
-		<!-- files -->
-		<files>files.tar</files>
+		<empty></empty>
 	</instructions>
 </package>
